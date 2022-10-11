@@ -40,6 +40,9 @@ chsh -s /usr/bin/zsh lorenz
 ```
 
 ## open new shell; in menu on new shell choose recommended configuration for .zshenv, .zprofile, .zshrc, .zlogin
+```
+Wizard options: nerdfont-complete + powerline, small icons, classic, unicode, lightest, angled separators, sharp heads, flat tails, 2 lines, dotted, no frame, compact, many icons, concise, transient_prompt, instant_prompt=verbose.
+```
 
 ## install oh-my-zsh
 ```
