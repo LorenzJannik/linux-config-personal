@@ -1,34 +1,3 @@
-## WSL ssh-key sync
-
-## SSH Aliase
-
-## Docker without pass
-
-## WSL Docker autostart
-
-## Shell
-
-git prompt (Anzeigen der Branch)
-https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh
-
-Kubecolor
-https://github.com/hidetatz/kubecolor
-
-ZSH Setup: Autocompletion
-https://prune998.medium.com/kubernetes-tooling-and-shell-setup-f48f30bdc727
-
-
-
-
-kube-ps1 to display current cluster & namespace
-
-OhMyZSH kubectl plugin for kubectl shortcuts
-
-Popeye to scan your cluster for potential issues
-
-
-
-
 ## Installation
 ```
 apt install zsh
@@ -50,7 +19,8 @@ sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O 
 ```
 
 ## install front (for powerlevel10k theme)
-download and install (for WSL in Windows-System ) https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
+download and install (for WSL in Windows-System )
+https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
 
 ## choose front in WSL for Shell
 
@@ -85,6 +55,12 @@ plugins=(git kubectl ssh-agent helm terraform zsh-autosuggestions zsh-syntax-hig
 zstyle :omz:plugins:ssh-agent agent-forwarding yes
 zstyle :omz:plugins:ssh-agent lazy yes
 zstyle :omz:plugins:ssh-agent lifetime 1h
+
+### ~/.zshrc: add az autocompletion
+(muss unter nash bereits funktionieren)
+```
+source /etc/bash_completion.d/azure-cli
+```
 
 ### load new settings
 exec zsh
